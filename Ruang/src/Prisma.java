@@ -1,4 +1,4 @@
-package Ruang;
+
 import java.util.Scanner;
 public class Prisma {
     public static void main (String [] args) {
