@@ -2,6 +2,7 @@ package Ruang;
 import java.util.Scanner;
 public class LimasSegiEmpat {
     public static void main (String [] args) {
+        System.out.println("Rumus Limas Segi Empat (Persegi)");
         Scanner nilai = new Scanner (System.in);
         int alas , tinggi , sisi , luas1 , luas2 , luas3 , luas4;
         System.out.println("Masukan Alas = ");
