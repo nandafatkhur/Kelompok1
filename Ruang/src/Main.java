@@ -48,6 +48,13 @@ public class Main {
         bangunRuang.luasPermukaan();
         System.out.println("\tLuas Permukaan Balok : "+balok.luasPermukaan());
 
+        //kubus
+        Kubus kubus = new Kubus();
+
+        bangunRuang.volume();
+        System.out.println("\tVolume Kubus : "+kubus.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Kubus : "+kubus.luasPermukaan());
 
     }
 }

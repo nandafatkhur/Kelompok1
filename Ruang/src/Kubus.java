@@ -1,15 +1,21 @@
-package Ruang;
 import java.util.Scanner;
-public class Kubus {
-    public static void main (String [] args) {
-        Scanner nilai = new Scanner (System.in);
-        int sisi ;
-        System.out.println("Masukan Sisi = ");
+
+public class Kubus extends BangunRuang{
+    int sisi;
+    public Kubus(){
+        System.out.println("Menghitung Kubus");
+        Scanner nilai = new Scanner(System.in);
+        System.out.print("\tMasukkan sisi : ");
         sisi = nilai.nextInt();
-        int Luas , Volume ;
-        Volume = sisi * sisi * sisi;
-        System.out.println("Volume Kubus adalah = "+Volume);
-        Luas = 6 * sisi * sisi;
-        System.out.println("Luas Permukaan Kubus adalah = "+Luas);
+    }
+
+    @Override
+    public double volume() {
+        return this.sisi * this.sisi * this.sisi;
+    }
+
+    @Override
+    public double luasPermukaan() {
+        return 6 * (this.sisi * this.sisi);
     }
 }
