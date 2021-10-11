@@ -62,6 +62,13 @@ public class Main {
         System.out.println("\tVolume Tabung : "+ tabung.volume());
         bangunRuang.luasPermukaan();
         System.out.println("\tLuas Permukaan Tabung : "+ tabung.luasPermukaan());
+        
+        //prisma
+        Prisma prisma = new Prisma();
+        bangunRuang.volume();
+        System.out.println("\tVolume Prisma : "+ prisma.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Prisma : "+ prisma.luasPermukaan());
 
     }
 }
