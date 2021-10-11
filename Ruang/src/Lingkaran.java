@@ -1,16 +1,21 @@
-package BangunDatar;
 import java.util.Scanner;
-public class Lingkaran {
-    public static void main (String [] args) {
-        Scanner nilai = new Scanner (System.in);
-        int jari ;
-        System.out.println("Masukan jari-jari = ");
-        jari = nilai.nextInt();
-        double Luas , Keliling , phi=3.14 ;
-        Luas = phi * jari * jari ;
-        System.out.println("Luas Lingkaran = "+Luas);
-        Keliling = 2 * phi * jari ;
-        System.out.println("Keliling Lingkaran = "+Keliling);
 
+public class Lingkaran extends BangunDatar{
+    double jari, phi=4.14;
+    public Lingkaran(){
+        System.out.println("Menghitung Lingkaran");
+        Scanner nilai = new Scanner(System.in);
+        System.out.print("\tMasukkan jari-jari : ");
+        jari = nilai.nextInt();
+    }
+
+    @Override
+    public double keliling() {
+        return this.jari * phi * 2;
+    }
+
+    @Override
+    public double luas() {
+        return this.jari * this.jari * phi;
     }
 }

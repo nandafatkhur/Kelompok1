@@ -1,15 +1,21 @@
-package BangunDatar;
 import java.util.Scanner;
-public class Persegi {
-    public static void main (String [] args) {
-        Scanner nilai = new Scanner (System.in);
-        int sisi ;
-        System.out.println("Masukan sisi = ");
+
+public class Persegi extends BangunDatar{
+    int sisi;
+    public Persegi(){
+        System.out.println("Menghitung persegi");
+        Scanner nilai = new Scanner(System.in);
+        System.out.print("\tMasukkan sisi : ");
         sisi = nilai.nextInt();
-        int Luas , Keliling ;
-        Keliling = 4*sisi ;
-        System.out.println("Keliling Persegi = "+Keliling);
-        Luas = sisi * sisi;
-        System.out.println("Luas Persegi = "+Luas);
+    }
+
+    @Override
+    public double keliling() {
+        return this.sisi * 4;
+    }
+
+    @Override
+    public double luas() {
+        return this.sisi * this.sisi;
     }
 }
