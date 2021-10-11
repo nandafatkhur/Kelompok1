@@ -1,19 +1,25 @@
-package Ruang;
 import java.util.Scanner;
-public class Balok {
-    public static void main (String [] args) {
-        Scanner nilai = new Scanner (System.in);
-        int panjang , lebar , tinggi ;
-        System.out.println("Masukan Panjang = ");
+
+public class Balok extends BangunRuang{
+    int panjang, lebar, tinggi;
+    public Balok(){
+        System.out.println("Menghitung Balok");
+        Scanner nilai = new Scanner(System.in);
+        System.out.print("\tMasukkan panjang : ");
         panjang = nilai.nextInt();
-        System.out.println("Masukan Lebar = ");
+        System.out.print("\tMasukkan Lebar : ");
         lebar = nilai.nextInt();
-        System.out.println("Masukan Tinggi = ");
+        System.out.print("\tMasukkan Tinggi : ");
         tinggi = nilai.nextInt();
-        int Luas , Volume ;
-        Volume = panjang * lebar * tinggi;
-        System.out.println("Volume Balok adalah = "+Volume);
-        Luas = (2 * (panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
-        System.out.println("Luas Permukaan Kubus adalah = "+Luas);
+    }
+
+    @Override
+    public double volume() {
+        return this.panjang * this.lebar * this.tinggi;
+    }
+
+    @Override
+    public double luasPermukaan() {
+        return 2 * (this.panjang * this.lebar + this.panjang * this.tinggi + this.lebar * this.tinggi);
     }
 }
