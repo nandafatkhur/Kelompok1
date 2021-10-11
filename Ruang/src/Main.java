@@ -55,6 +55,13 @@ public class Main {
         System.out.println("\tVolume Kubus : "+kubus.volume());
         bangunRuang.luasPermukaan();
         System.out.println("\tLuas Permukaan Kubus : "+kubus.luasPermukaan());
+        
+        //tabung
+        Tabung tabung = new Tabung();
+        bangunRuang.volume();
+        System.out.println("\tVolume Tabung : "+ tabung.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Tabung : "+ tabung.luasPermukaan());
 
     }
 }
