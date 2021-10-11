@@ -36,5 +36,18 @@ public class Main {
         bangungDatar.luas();
         System.out.println("\tLuas Lingkaran : "+lingkaran.luas());
 
+        System.out.println();
+        System.out.println("Menghitung Objek 3D");
+        BangunRuang bangunRuang = new BangunRuang();
+
+        //balok
+        Balok balok = new Balok();
+
+        bangunRuang.volume();
+        System.out.println("\tVolume Balok : "+balok.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Balok : "+balok.luasPermukaan());
+
+
     }
 }
