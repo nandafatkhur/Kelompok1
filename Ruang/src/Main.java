@@ -55,20 +55,45 @@ public class Main {
         System.out.println("\tVolume Kubus : "+kubus.volume());
         bangunRuang.luasPermukaan();
         System.out.println("\tLuas Permukaan Kubus : "+kubus.luasPermukaan());
-        
+
+        //bola
+        Bola bola = new Bola();
+
+        bangunRuang.volume();
+        System.out.println("\tVolume Bola : "+bola.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Bola : "+bola.luasPermukaan());
+
         //tabung
         Tabung tabung = new Tabung();
+
         bangunRuang.volume();
-        System.out.println("\tVolume Tabung : "+ tabung.volume());
+        System.out.println("\tVolume Tabung : "+tabung.volume());
         bangunRuang.luasPermukaan();
-        System.out.println("\tLuas Permukaan Tabung : "+ tabung.luasPermukaan());
-        
+        System.out.println("\tLuas Permukaan Tabung : "+tabung.luasPermukaan());
+
         //prisma
         Prisma prisma = new Prisma();
-        bangunRuang.volume();
-        System.out.println("\tVolume Prisma : "+ prisma.volume());
-        bangunRuang.luasPermukaan();
-        System.out.println("\tLuas Permukaan Prisma : "+ prisma.luasPermukaan());
 
+        bangunRuang.volume();
+        System.out.println("\tVolume Prisma : "+prisma.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Prisma : "+prisma.luasPermukaan());
+
+        //limas segitiga
+        LimasSegitiga limasSegitiga =new LimasSegitiga();
+
+        bangunRuang.volume();
+        System.out.println("\tVolume Limas Segitiga : "+limasSegitiga.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Limas Segitiga : "+limasSegitiga.luasPermukaan());
+
+        //limas segi empat (persegi)
+        LimasSegiempat limasSegiempat = new LimasSegiempat();
+
+        bangunRuang.volume();
+        System.out.println("\tVolume limas Segi Empat (Persegi) : "+limasSegiempat.volume());
+        bangunRuang.luasPermukaan();
+        System.out.println("\tLuas Permukaan Limas Segi Empat (Persegi) : "+limasSegiempat.luasPermukaan());
     }
 }
